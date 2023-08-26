@@ -1,0 +1,106 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+ }
+body{
+    background-image: url(bg1.jpg);
+    font-family: roboto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.loginForm{
+    background-color: #f7f7f7;
+    color: #202020;
+    padding: 20px 10px;
+    border-radius: 5px;
+    border: solid 2px #ffffff; 
+    box-shadow: 2px 10px 10px 0 #0004;
+ }
+.loginForm .swith-button{
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.loginForm .swith-button a{
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 4px; margin-right: 5px; 
+    font-weight: 600; cursor: pointer;
+ }
+
+.loginForm .swith-button a.active{
+    color: #0003ff;
+    border-bottom:solid 2px #0003ff; 
+}
+.loginForm form{
+    width: 330px;
+    display: block;
+    overflow: hidden;
+    padding: 0 20px;
+}
+.loginForm .logo img{
+
+    margin-left: 25%;
+    width: 150px;
+    height: 150px;
+}
+.loginForm .title{
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    color: #0003ff; 
+    margin-bottom: 40px;
+}
+.loginForm .title span{
+    font-weight: 400;
+    color: #202020;
+}
+
+
+.loginForm input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 0 12px;
+    background: #ebebeb;
+    outline-color: #005fa2; 
+    border: none;
+    margin: 5px auto 20px;
+    transition: all 0.3s; 
+    }
+.loginForm input.ar{
+    height: 0;
+    margin: 0 !important; 
+    }
+
+.loginForm .show-password{
+    font-size: 13px; 
+    display: flex; 
+    align-items: center;
+    font-weight: 600;
+    margin-top: 30px; 
+    }
+.loginForm .show-password .show{
+
+    width: 18px;
+    height: 18px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px #0003ff;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.loginForm .show-password .show[array="true"]::after{content: ""; width: 10px; height: 10px; position: absolute; 
+    background: #0003ff; border-radius: 2px; }
+
+.loginForm .submit{display: block; padding: 8px 16px; float: right; width: auto; border: none; outline: none; 
+    background: #37566b; color: #f7f7f7; margin-top: 20px; transition: all 0.3s; }
+.loginForm .submit:hover{box-shadow: 0 4px 8px #0008; background: #00406e; cursor: pointer; }
+.loginForm .link{display: block; overflow: hidden; width: 100%; font-size: 12px; margin-top: 20px; }
