@@ -14,7 +14,7 @@ Razorpay Payment Gateway Integration(PHP,MySQL) with Custom Form Page and Databa
    $host = "localhost";
    $username = "root";
    $password = "root";
-   $dbname = "gothamshop";
+   $dbname = "vlbdb";
    ```
 3. Import the database.sql in your database or create below table
    ```sh
